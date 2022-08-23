@@ -1,0 +1,32 @@
+---
+title: "诗涛的展示 | shitao's pre"
+author: "吴诗涛 | shitao"
+format: 
+  revealjs:
+    menu: false
+    preview-links: auto
+    # self-contained: true # 会让render变慢，publish之前设置
+    theme: serif
+---
+
+# 个人简介
+
+这是我的个人简介
+
+::: {.notes}
+这里讲个笑话
+:::
+
+## Quarto
+
+:::: {.columns}
+
+::: {.column width="60%"}
+我的介绍Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+:::
+
+::: {.column width="40%"}
+我的图片
+:::
+
+:::: 
