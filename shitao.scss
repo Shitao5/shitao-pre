@@ -4,8 +4,14 @@
 /*-- scss:rules --*/
 
 .reveal code { font-size: 87%;}
-.reveal a { color: #293462;}
+.reveal a { color: #59CE8F;}
 .reveal h2 { color: #820000;}
+.reveal blockquote {
+  font-size: 75%;
+  font-family: "STKaiti";
+  color: #1C3879;
+  border-left-color: #002B5B;
+}
 
 // 一级标题下注释
 .reveal .yinyan { color: #42855B;}

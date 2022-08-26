@@ -66,7 +66,7 @@ library(fontawesome)
 :::
 
 ::: {.fragment}
-- `r fa("book-open", fill = "#1363DF")` 阅读 + `r fa("think-peaks", fill = "#1363DF")` 思考（擅长白嫖书籍资源，文献管理软件Zotero熟练使用者）
+- `r fa("book-open", fill = "#1363DF")` 阅读 + `r fa("think-peaks", fill = "#1363DF")` 思考（擅长白嫖书籍资源，目前在琢磨[赫尔曼·黑塞](https://zh.wikipedia.org/wiki/%E8%B5%AB%E5%B0%94%E6%9B%BC%C2%B7%E9%BB%91%E5%A1%9E)的作品）
 
 - `r fa("music", fill = "#F94C66")` 听音乐（HiFi退烧中）
 
@@ -76,20 +76,6 @@ library(fontawesome)
 ::: {.fragment}
 - `r fa("blog", fill = "#F15412")` 博客写作（正在尝试）
 :::
-
-## 学科竞赛获奖 {.scrollable .smaller}
-
-1. 2020年11月 省大学生经济管理案例竞赛二等奖
-1. 2020年11月 省第三届大学生乡村振兴创意大赛铜奖
-1. 2020年12月 省会展策划创意大赛暨首届会展策划创意国际邀请赛一等奖
-1. 2021年05月 省第十七届“挑战杯”大学生课外学术科技作品竞赛一等奖
-1. 2021年05月 国际数学建模竞赛（美国赛）S奖
-1. 2021年06月 校第20届数学建模竞赛一等奖
-1. 2021年07月 长三角高校数学建模竞赛成功参赛奖
-1. 2021年12月 省大学生数学建模竞赛三等奖
-1. 2021年12月 省大学生经济管理案例竞赛二等奖
-
-……
 
 ## 奖学金及荣誉
 
@@ -105,6 +91,24 @@ library(fontawesome)
 ::: {.fragment}
 <center>平均学分绩点（GPA）：4.2</center>
 :::
+
+## 学科竞赛获奖 {.scrollable .smaller}
+
+::: {.notes}
+讲这玩意儿真的非常寡淡，一笔带过谢谢！
+:::
+
+1. 2020年11月 省大学生经济管理案例竞赛二等奖
+1. 2020年11月 省第三届大学生乡村振兴创意大赛铜奖
+1. 2020年12月 省会展策划创意大赛暨首届会展策划创意国际邀请赛一等奖
+1. 2021年05月 省第十七届“挑战杯”大学生课外学术科技作品竞赛一等奖
+1. 2021年05月 国际数学建模竞赛（美国赛）S奖
+1. 2021年06月 校第20届数学建模竞赛一等奖
+1. 2021年07月 长三角高校数学建模竞赛成功参赛奖
+1. 2021年12月 省大学生数学建模竞赛三等奖
+1. 2021年12月 省大学生经济管理案例竞赛二等奖
+
+……
 
 # 军旅生涯感悟
 
@@ -123,6 +127,10 @@ library(fontawesome)
 - 集体观念
 
 ::: {.fragment}
+- 战友情
+:::
+
+::: {.fragment}
 - 敢于吃苦，敢于胜利
 :::
 
@@ -130,8 +138,11 @@ library(fontawesome)
 - 做难事必有所得
 :::
 
-::: {.fragment}
-- 战友情
+::: {.notes}
+- 在大学，个体意识增强
+- 注重同学情谊的培养
+- 训练
+- 日常的平带，可以磨灭所有的意志，敢于迎接新的挑战
 :::
 
 # 给大二同学的建议
@@ -177,28 +188,79 @@ leaflet(width = "1000px", height = "600px") %>%
 ## 提升学习能力
 
 - 学习如何学习
-  - 善用学校资源：图书馆、数据库等
-  - 拓宽学习途径：慕课平台、GitHub等
+  - 善用学校资源：图书馆、[数据库](https://wisdom.chaoxing.com/newwisdom/doordatabase/database.html?pageId=178161&wfwfid=22888)等
+  - 拓宽学习途径：慕课平台、[GitHub](https://github.com/)等
   - 善用工具：文献管理软件
+
+<center><a href="https://www.coursera.org/learn/learning-how-to-learn"><img src=img/learn-how-to-learn.png style="zoom:40%;"></a></center>
+
+  <!-- [Zotero](https://www.zotero.org/) -->
 
 ## 提升学习能力
 
 - 学会如何提问
+  - 有好的问题，才可能有好的答案
   - 帮助别人帮助你
+  - [《学会提问》](https://book.douban.com/subject/35513147/)
 
-::: {.qiangdiao}
+<center><img src=img/help-me-help-you.png style="zoom:110%;"></center>
+
+::: {.fragment .qiangdiao}
 大胆提问！大胆提问！大胆提问！
 :::
 
+## 大学三大关键指标（KPI） ^[自己定义的，供参考]
+
+### 1. 输入量
+
+通过自己的感悟将外界的信息内化为内在的知识。
+
+> 生命不是你活了多少日子，而是你记住了多少日子。 ——许渊冲
+
+- 阅读
+- 向别人提问
+- 各类媒体
+- ……
+
+## 大学三大关键指标（KPI） ^[自己定义的，供参考]
+
+### 2. 输出量
+
+将内在的知识转化为别人可以接收的信息。
+
+> 说话周到比雄辩好，措辞适当比恭维好。 ——培根
+
+- 写作
+- 为别人答疑
+- 各类媒体
+- ……
+
+## 大学三大关键指标（KPI） ^[自己定义的，供参考]
+
+### 3. 运动量
+
+> 殊不知有健全之身体，始有健全之精神；若身体柔弱，则思想精神何由发达？或曰，非困苦其身体，则精神不能自由。然所谓困苦者，乃锻炼之谓，非使之柔弱以自苦也。 ——蔡元培
+
 ## 发现兴趣，发展一门手艺
 
-## 多运动，保持强健的体魄
+```{mermaid}
+flowchart LR
 
-## 关于科研竞赛
+A(数据分析) --> R(R语言)
+R -->|数据采集| web(网络爬虫) --> html(HTML,CSS,JavaScript) == Pandoc ==> result
+R -->|版本控制| github(GitHub) --> md
+R -->|可重复报告| rmd(rmd/qmd) -->|knitr| md(((markdown)))
+zotero(Zotero) -->|文献管理| rmd 
+md == Pandoc ==> result(Word,PDF,PPT,Blog,etc)
+R -->|大数据| SQL(SQL) --> D(并行计算)
+
+style D fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+```
+
+<!-- ## 关于科研竞赛 -->
 
 
 
-## 关于绩点
 
 
 
@@ -212,10 +274,11 @@ leaflet(width = "1000px", height = "600px") %>%
 - `r fa("github", fill = "#24292F")` GitHub:
 <https://github.com/Shitao5/>
 
-- `r fa("file-powerpoint", fill = "#C43F1D")` 本幻灯片（9月3日下线）：
+- `r fa("file-powerpoint", fill = "#C43F1D")` 本幻灯片：
 <https://shitao5.github.io/shitao-pre/>
 
-二维码
+<center><img src=img/pre.png style="zoom:55%;"></center>
+
 :::
 
 ::: {.column width="30%"}

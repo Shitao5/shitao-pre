@@ -325,6 +325,9 @@
   <script src="shitao-pre_files/libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
   <link href="shitao-pre_files/libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
   <script src="shitao-pre_files/libs/leaflet-binding-2.1.1/leaflet.js"></script>
+  <script src="shitao-pre_files/libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="shitao-pre_files/libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="shitao-pre_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -393,7 +396,7 @@
 </div>
 <div class="fragment">
 <ul>
-<li><p><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#1363DF;overflow:visible;position:relative;"><path d="M144.3 32.04C106.9 31.29 63.7 41.44 18.6 61.29c-11.42 5.026-18.6 16.67-18.6 29.15l0 357.6c0 11.55 11.99 19.55 22.45 14.65c126.3-59.14 219.8 11 223.8 14.01C249.1 478.9 252.5 480 256 480c12.4 0 16-11.38 16-15.98V80.04c0-5.203-2.531-10.08-6.781-13.08C263.3 65.58 216.7 33.35 144.3 32.04zM557.4 61.29c-45.11-19.79-88.48-29.61-125.7-29.26c-72.44 1.312-118.1 33.55-120.9 34.92C306.5 69.96 304 74.83 304 80.04v383.1C304 468.4 307.5 480 320 480c3.484 0 6.938-1.125 9.781-3.328c3.925-3.018 97.44-73.16 223.8-14c10.46 4.896 22.45-3.105 22.45-14.65l.0001-357.6C575.1 77.97 568.8 66.31 557.4 61.29z"></path></svg> 阅读 + <svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#1363DF;overflow:visible;position:relative;"><path d="M465.4 409.4l87.1-150.2-32-.3-55.1 95L259.2 0 23 407.4l32 .3L259.2 55.6zm-355.3-44.1h32.1l117.4-202.5L463 511.9l32.5 .1-235.8-404.6z"></path></svg> 思考（擅长白嫖书籍资源，文献管理软件Zotero熟练使用者）</p></li>
+<li><p><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#1363DF;overflow:visible;position:relative;"><path d="M144.3 32.04C106.9 31.29 63.7 41.44 18.6 61.29c-11.42 5.026-18.6 16.67-18.6 29.15l0 357.6c0 11.55 11.99 19.55 22.45 14.65c126.3-59.14 219.8 11 223.8 14.01C249.1 478.9 252.5 480 256 480c12.4 0 16-11.38 16-15.98V80.04c0-5.203-2.531-10.08-6.781-13.08C263.3 65.58 216.7 33.35 144.3 32.04zM557.4 61.29c-45.11-19.79-88.48-29.61-125.7-29.26c-72.44 1.312-118.1 33.55-120.9 34.92C306.5 69.96 304 74.83 304 80.04v383.1C304 468.4 307.5 480 320 480c3.484 0 6.938-1.125 9.781-3.328c3.925-3.018 97.44-73.16 223.8-14c10.46 4.896 22.45-3.105 22.45-14.65l.0001-357.6C575.1 77.97 568.8 66.31 557.4 61.29z"></path></svg> 阅读 + <svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#1363DF;overflow:visible;position:relative;"><path d="M465.4 409.4l87.1-150.2-32-.3-55.1 95L259.2 0 23 407.4l32 .3L259.2 55.6zm-355.3-44.1h32.1l117.4-202.5L463 511.9l32.5 .1-235.8-404.6z"></path></svg> 思考（擅长白嫖书籍资源，目前在琢磨<a href="https://zh.wikipedia.org/wiki/%E8%B5%AB%E5%B0%94%E6%9B%BC%C2%B7%E9%BB%91%E5%A1%9E">赫尔曼·黑塞</a>的作品）</p></li>
 <li><p><svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#F94C66;overflow:visible;position:relative;"><path d="M511.1 367.1c0 44.18-42.98 80-95.1 80s-95.1-35.82-95.1-79.1c0-44.18 42.98-79.1 95.1-79.1c11.28 0 21.95 1.92 32.01 4.898V148.1L192 224l-.0023 208.1C191.1 476.2 149 512 95.1 512S0 476.2 0 432c0-44.18 42.98-79.1 95.1-79.1c11.28 0 21.95 1.92 32 4.898V126.5c0-12.97 10.06-26.63 22.41-30.52l319.1-94.49C472.1 .6615 477.3 0 480 0c17.66 0 31.97 14.34 32 31.99L511.1 367.1z"></path></svg> 听音乐（HiFi退烧中）</p></li>
 <li><p><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#3EC70B;overflow:visible;position:relative;"><path d="M400 224h-44l-26.12-53.25c-12.5-25.5-35.38-44.25-61.75-51L197 98.63C189.5 96.84 181.1 95.97 174.5 95.97c-20.88 0-41.33 6.81-58.26 19.78L76.5 146.3C68.31 152.5 64.01 162 64.01 171.6c0 17.11 13.67 32.02 32.02 32.02c6.808 0 13.67-2.158 19.47-6.616l39.63-30.38c5.92-4.488 13.01-6.787 19.53-6.787c2.017 0 3.981 .2196 5.841 .6623l14.62 4.25l-37.5 87.5C154.1 260.3 152.5 268.8 152.5 277.2c0 22.09 11.49 43.52 31.51 55.29l85 50.13l-27.5 87.75c-.9875 3.174-1.458 6.388-1.458 9.55c0 13.65 8.757 26.31 22.46 30.58C265.6 511.5 268.9 512 272 512c13.62 0 26.25-8.75 30.5-22.5l31.75-101c1.211-4.278 1.796-8.625 1.796-12.93c0-16.57-8.661-32.51-23.55-41.44l-61.13-36.12l31.25-78.38l20.25 41.5C310.9 277.4 327.9 288 345.1 288H400c17.62 0 32-14.38 32-32C432 238.3 417.6 224 400 224zM288 96c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48S261.5 96 288 96zM129.8 317.5L114.9 352H48c-17.62 0-32 14.38-32 32s14.38 32 32 32h77.5c19.25 0 36.5-11.5 44-29.12l8.875-20.5l-10.75-6.25C150.4 349.9 137.6 334.8 129.8 317.5z"></path></svg> 跑步（遇见打招呼👋）</p></li>
 </ul>
@@ -403,21 +406,6 @@
 <li><svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#F15412;overflow:visible;position:relative;"><path d="M217.6 96.1c-12.95-.625-24.66 9.156-25.52 22.37C191.2 131.7 201.2 143.1 214.4 143.1c79.53 5.188 148.4 74.09 153.6 153.6c.8281 12.69 11.39 22.43 23.94 22.43c.5156 0 1.047-.0313 1.578-.0625c13.22-.8438 23.25-12.28 22.39-25.5C409.3 191.8 320.3 102.8 217.6 96.1zM224 0C206.3 0 192 14.31 192 32s14.33 32 32 32c123.5 0 224 100.5 224 224c0 17.69 14.33 32 32 32s32-14.31 32-32C512 129.2 382.8 0 224 0zM172.3 226.8C157.7 223.9 144 235.8 144 250.6v50.37c0 10.25 7.127 18.37 16.75 21.1c18.13 6.75 31.26 24.38 31.26 44.1c0 26.5-21.5 47.1-48.01 47.1c-26.5 0-48.01-21.5-48.01-47.1V120c0-13.25-10.75-23.1-24.01-23.1l-48.01 .0076C10.75 96.02 0 106.8 0 120v247.1c0 89.5 82.14 160.2 175 140.7c54.38-11.5 98.27-55.5 109.8-109.7C302.2 316.1 247.8 241.8 172.3 226.8z"></path></svg> 博客写作（正在尝试）</li>
 </ul>
 </div>
-</section>
-<section id="学科竞赛获奖" class="slide level2 scrollable smaller">
-<h2>学科竞赛获奖</h2>
-<ol type="1">
-<li>2020年11月 省大学生经济管理案例竞赛二等奖</li>
-<li>2020年11月 省第三届大学生乡村振兴创意大赛铜奖</li>
-<li>2020年12月 省会展策划创意大赛暨首届会展策划创意国际邀请赛一等奖</li>
-<li>2021年05月 省第十七届“挑战杯”大学生课外学术科技作品竞赛一等奖</li>
-<li>2021年05月 国际数学建模竞赛（美国赛）S奖</li>
-<li>2021年06月 校第20届数学建模竞赛一等奖</li>
-<li>2021年07月 长三角高校数学建模竞赛成功参赛奖</li>
-<li>2021年12月 省大学生数学建模竞赛三等奖</li>
-<li>2021年12月 省大学生经济管理案例竞赛二等奖</li>
-</ol>
-<p>……</p>
 </section>
 <section id="奖学金及荣誉" class="slide level2">
 <h2>奖学金及荣誉</h2>
@@ -435,6 +423,34 @@
 平均学分绩点（GPA）：4.2
 </center>
 </div>
+</section>
+<section id="学科竞赛获奖" class="slide level2 scrollable smaller">
+<h2>学科竞赛获奖</h2>
+<aside class="notes">
+<p>讲这玩意儿真的非常寡淡，一笔带过谢谢！</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<ol type="1">
+<li>2020年11月 省大学生经济管理案例竞赛二等奖</li>
+<li>2020年11月 省第三届大学生乡村振兴创意大赛铜奖</li>
+<li>2020年12月 省会展策划创意大赛暨首届会展策划创意国际邀请赛一等奖</li>
+<li>2021年05月 省第十七届“挑战杯”大学生课外学术科技作品竞赛一等奖</li>
+<li>2021年05月 国际数学建模竞赛（美国赛）S奖</li>
+<li>2021年06月 校第20届数学建模竞赛一等奖</li>
+<li>2021年07月 长三角高校数学建模竞赛成功参赛奖</li>
+<li>2021年12月 省大学生数学建模竞赛三等奖</li>
+<li>2021年12月 省大学生经济管理案例竞赛二等奖</li>
+</ol>
+<p>……</p>
 </section></section>
 <section>
 <section id="军旅生涯感悟" class="title-slide slide level1 center">
@@ -464,6 +480,11 @@
 </ul>
 <div class="fragment">
 <ul>
+<li>战友情</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
 <li>敢于吃苦，敢于胜利</li>
 </ul>
 </div>
@@ -472,11 +493,24 @@
 <li>做难事必有所得</li>
 </ul>
 </div>
-<div class="fragment">
+<aside class="notes">
 <ul>
-<li>战友情</li>
+<li>在大学，个体意识增强</li>
+<li>注重同学情谊的培养</li>
+<li>训练</li>
+<li>日常的平带，可以磨灭所有的意志，敢于迎接新的挑战</li>
 </ul>
-</div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section></section>
 <section>
 <section id="给大二同学的建议" class="title-slide slide level1 center">
@@ -490,8 +524,8 @@
 <h2>阅读！阅读！阅读！</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-162f514bfb667a41e562" style="width:1000px;height:600px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-162f514bfb667a41e562">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[30.2952,120.01,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"图书馆",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[30.2952,30.2952],"lng":[120.01,120.01]},"setView":[[30.2952,120.01],17,[]]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-f388f5169fab338fece8" style="width:1000px;height:600px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f388f5169fab338fece8">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[30.2952,120.01,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"图书馆",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[30.2952,30.2952],"lng":[120.01,120.01]},"setView":[[30.2952,120.01],17,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <aside class="notes">
@@ -538,35 +572,94 @@
 <ul>
 <li>学习如何学习
 <ul>
-<li>善用学校资源：图书馆、数据库等</li>
-<li>拓宽学习途径：慕课平台、GitHub等</li>
+<li>善用学校资源：图书馆、<a href="https://wisdom.chaoxing.com/newwisdom/doordatabase/database.html?pageId=178161&amp;wfwfid=22888">数据库</a>等</li>
+<li>拓宽学习途径：慕课平台、<a href="https://github.com/">GitHub</a>等</li>
 <li>善用工具：文献管理软件</li>
 </ul></li>
 </ul>
+<center>
+<a href="https://www.coursera.org/learn/learning-how-to-learn"><img src="img/learn-how-to-learn.png" style="zoom:40%;"></a>
+</center>
+<p><!-- [Zotero](https://www.zotero.org/) --></p>
 </section>
 <section id="提升学习能力-1" class="slide level2">
 <h2>提升学习能力</h2>
 <ul>
 <li>学会如何提问
 <ul>
+<li>有好的问题，才可能有好的答案</li>
 <li>帮助别人帮助你</li>
+<li><a href="https://book.douban.com/subject/35513147/">《学会提问》</a></li>
 </ul></li>
 </ul>
-<div class="qiangdiao">
+<center>
+<img src="img/help-me-help-you.png" style="zoom:110%;">
+</center>
+<div class="fragment qiangdiao">
 <p>大胆提问！大胆提问！大胆提问！</p>
 </div>
 </section>
+<section id="大学三大关键指标kpi" class="slide level2">
+<h2>大学三大关键指标（KPI） <sup>1</sup></h2>
+<h3 id="输入量">1. 输入量</h3>
+<p>通过自己的感悟将外界的信息内化为内在的知识。</p>
+<blockquote>
+<p>生命不是你活了多少日子，而是你记住了多少日子。 ——许渊冲</p>
+</blockquote>
+<ul>
+<li>阅读</li>
+<li>向别人提问</li>
+<li>各类媒体</li>
+<li>……</li>
+</ul>
+<aside><ol class="aside-footnotes"><li id="fn2" role="doc-endnote"><p>自己定义的，供参考</p></li></ol></aside></section>
+<section id="大学三大关键指标kpi-1" class="slide level2">
+<h2>大学三大关键指标（KPI） <sup>1</sup></h2>
+<h3 id="输出量">2. 输出量</h3>
+<p>将内在的知识转化为别人可以接收的信息。</p>
+<blockquote>
+<p>说话周到比雄辩好，措辞适当比恭维好。 ——培根</p>
+</blockquote>
+<ul>
+<li>写作</li>
+<li>为别人答疑</li>
+<li>各类媒体</li>
+<li>……</li>
+</ul>
+<aside><ol class="aside-footnotes"><li id="fn3" role="doc-endnote"><p>自己定义的，供参考</p></li></ol></aside></section>
+<section id="大学三大关键指标kpi-2" class="slide level2">
+<h2>大学三大关键指标（KPI） <sup>1</sup></h2>
+<h3 id="运动量">3. 运动量</h3>
+<blockquote>
+<p>殊不知有健全之身体，始有健全之精神；若身体柔弱，则思想精神何由发达？或曰，非困苦其身体，则精神不能自由。然所谓困苦者，乃锻炼之谓，非使之柔弱以自苦也。 ——蔡元培</p>
+</blockquote>
+<aside><ol class="aside-footnotes"><li id="fn4" role="doc-endnote"><p>自己定义的，供参考</p></li></ol></aside></section>
 <section id="发现兴趣发展一门手艺" class="slide level2">
 <h2>发现兴趣，发展一门手艺</h2>
-</section>
-<section id="多运动保持强健的体魄" class="slide level2">
-<h2>多运动，保持强健的体魄</h2>
-</section>
-<section id="关于科研竞赛" class="slide level2">
-<h2>关于科研竞赛</h2>
-</section>
-<section id="关于绩点" class="slide level2">
-<h2>关于绩点</h2>
+<div class="cell" data-reveal="true">
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
+
+A(数据分析) --&gt; R(R语言)
+R --&gt;|数据采集| web(网络爬虫) --&gt; html(HTML,CSS,JavaScript) == Pandoc ==&gt; result
+R --&gt;|版本控制| github(GitHub) --&gt; md
+R --&gt;|可重复报告| rmd(rmd/qmd) --&gt;|knitr| md(((markdown)))
+zotero(Zotero) --&gt;|文献管理| rmd 
+md == Pandoc ==&gt; result(Word,PDF,PPT,Blog,etc)
+R --&gt;|大数据| SQL(SQL) --&gt; D(并行计算)
+
+style D fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+</pre>
+<div id="mermaid-tooltip-1" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
+<!-- ## 关于科研竞赛 -->
 </section>
 <section id="更多内容详见" class="slide level2">
 <h2>更多内容，详见：</h2>
@@ -575,9 +668,11 @@
 <ul>
 <li><p><svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#F15412;overflow:visible;position:relative;"><path d="M217.6 96.1c-12.95-.625-24.66 9.156-25.52 22.37C191.2 131.7 201.2 143.1 214.4 143.1c79.53 5.188 148.4 74.09 153.6 153.6c.8281 12.69 11.39 22.43 23.94 22.43c.5156 0 1.047-.0313 1.578-.0625c13.22-.8438 23.25-12.28 22.39-25.5C409.3 191.8 320.3 102.8 217.6 96.1zM224 0C206.3 0 192 14.31 192 32s14.33 32 32 32c123.5 0 224 100.5 224 224c0 17.69 14.33 32 32 32s32-14.31 32-32C512 129.2 382.8 0 224 0zM172.3 226.8C157.7 223.9 144 235.8 144 250.6v50.37c0 10.25 7.127 18.37 16.75 21.1c18.13 6.75 31.26 24.38 31.26 44.1c0 26.5-21.5 47.1-48.01 47.1c-26.5 0-48.01-21.5-48.01-47.1V120c0-13.25-10.75-23.1-24.01-23.1l-48.01 .0076C10.75 96.02 0 106.8 0 120v247.1c0 89.5 82.14 160.2 175 140.7c54.38-11.5 98.27-55.5 109.8-109.7C302.2 316.1 247.8 241.8 172.3 226.8z"></path></svg> 个人博客: <a href="https://shitao.netlify.app/" class="uri">https://shitao.netlify.app/</a></p></li>
 <li><p><svg aria-hidden="true" role="img" viewbox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#24292F;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg> GitHub: <a href="https://github.com/Shitao5/" class="uri">https://github.com/Shitao5/</a></p></li>
-<li><p><svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#C43F1D;overflow:visible;position:relative;"><path d="M256 0v128h128L256 0zM224 128L224 0H48C21.49 0 0 21.49 0 48v416C0 490.5 21.49 512 48 512h288c26.51 0 48-21.49 48-48V160h-127.1C238.3 160 224 145.7 224 128zM279.6 308.1C284.2 353.5 248.5 392 204 392H160v40C160 440.8 152.8 448 144 448H128c-8.836 0-16-7.164-16-16V256c0-8.836 7.164-16 16-16h71.51C239.3 240 275.6 268.5 279.6 308.1zM160 344h44c15.44 0 28-12.56 28-28S219.4 288 204 288H160V344z"></path></svg> 本幻灯片（9月3日下线）： <a href="https://shitao5.github.io/shitao-pre/" class="uri">https://shitao5.github.io/shitao-pre/</a></p></li>
+<li><p><svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#C43F1D;overflow:visible;position:relative;"><path d="M256 0v128h128L256 0zM224 128L224 0H48C21.49 0 0 21.49 0 48v416C0 490.5 21.49 512 48 512h288c26.51 0 48-21.49 48-48V160h-127.1C238.3 160 224 145.7 224 128zM279.6 308.1C284.2 353.5 248.5 392 204 392H160v40C160 440.8 152.8 448 144 448H128c-8.836 0-16-7.164-16-16V256c0-8.836 7.164-16 16-16h71.51C239.3 240 275.6 268.5 279.6 308.1zM160 344h44c15.44 0 28-12.56 28-28S219.4 288 204 288H160V344z"></path></svg> 本幻灯片： <a href="https://shitao5.github.io/shitao-pre/" class="uri">https://shitao5.github.io/shitao-pre/</a></p></li>
 </ul>
-<p>二维码</p>
+<center>
+<img src="img/pre.png" style="zoom:55%;">
+</center>
 </div><div class="column" style="width:30%;">
 <ul>
 <li><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#2BA245;overflow:visible;position:relative;"><path d="M385.2 167.6c6.4 0 12.6 .3 18.8 1.1C387.4 90.3 303.3 32 207.7 32 100.5 32 13 104.8 13 197.4c0 53.4 29.3 97.5 77.9 131.6l-19.3 58.6 68-34.1c24.4 4.8 43.8 9.7 68.2 9.7 6.2 0 12.1-.3 18.3-.8-4-12.9-6.2-26.6-6.2-40.8-.1-84.9 72.9-154 165.3-154zm-104.5-52.9c14.5 0 24.2 9.7 24.2 24.4 0 14.5-9.7 24.2-24.2 24.2-14.8 0-29.3-9.7-29.3-24.2 .1-14.7 14.6-24.4 29.3-24.4zm-136.4 48.6c-14.5 0-29.3-9.7-29.3-24.2 0-14.8 14.8-24.4 29.3-24.4 14.8 0 24.4 9.7 24.4 24.4 0 14.6-9.6 24.2-24.4 24.2zM563 319.4c0-77.9-77.9-141.3-165.4-141.3-92.7 0-165.4 63.4-165.4 141.3S305 460.7 397.6 460.7c19.3 0 38.9-5.1 58.6-9.9l53.4 29.3-14.8-48.6C534 402.1 563 363.2 563 319.4zm-219.1-24.5c-9.7 0-19.3-9.7-19.3-19.6 0-9.7 9.7-19.3 19.3-19.3 14.8 0 24.4 9.7 24.4 19.3 0 10-9.7 19.6-24.4 19.6zm107.1 0c-9.7 0-19.3-9.7-19.3-19.6 0-9.7 9.7-19.3 19.3-19.3 14.5 0 24.4 9.7 24.4 19.3 .1 10-9.9 19.6-24.4 19.6z"></path></svg> 微信：</li>
