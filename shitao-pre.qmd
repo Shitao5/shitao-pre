@@ -7,12 +7,12 @@ description: "给21级同学的分享"
 format: 
   revealjs:
     menu: true
-    chalkboard: true
+    chalkboard: false
     preview-links: auto
     footer: "与21级同学分享"
     slide-number: c/t
     theme: [serif, shitao.scss]
-    # self-contained: true # 会让render变慢，publish之前设置
+    self-contained: true # 会让render变慢，publish之前设置
 ---
 
 ```{r load_packages, message=FALSE, warning=FALSE, include=FALSE} 
@@ -243,26 +243,7 @@ leaflet(width = "1000px", height = "600px") %>%
 
 ## 发现兴趣，发展一门手艺
 
-```{mermaid}
-flowchart LR
-
-A(数据分析) --> R(R语言)
-R -->|数据采集| web(网络爬虫) --> html(HTML,CSS,JavaScript) == Pandoc ==> result
-R -->|版本控制| github(GitHub) --> md
-R -->|可重复报告| rmd(rmd/qmd) -->|knitr| md(((markdown)))
-zotero(Zotero) -->|文献管理| rmd 
-md == Pandoc ==> result(Word,PDF,PPT,Blog,etc)
-R -->|大数据| SQL(SQL) --> D(并行计算)
-
-style D fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
-```
-
-<!-- ## 关于科研竞赛 -->
-
-
-
-
-
+<center><img src=img/mermaid-diagram.svg style="zoom:100%;"></center>
 
 ## 更多内容，详见：
 
