@@ -269,9 +269,10 @@ leaflet(width = "1000px", height = "600px") %>%
 <https://github.com/Shitao5/>
 
 - `r fa("file-powerpoint", fill = "#C43F1D")` 本幻灯片：
-<https://shitao5.github.io/shitao-pre/>
+  1. <https://shitao5.github.io/shitao-pre/>
+  1. <https://shitao-pre.netlify.app/>
 
-<center><img src=img/pre.png style="zoom:55%;"></center>
+<center><img src=img/pre-netlify.png style="zoom:55%;"></center>
 
 :::
 
