@@ -2,7 +2,7 @@
 title: "与21级同学分享"
 author: "吴诗涛"
 institute: "经济191"
-date: "2022-08-31"
+date: "2022-08-30"
 description: "给21级同学的分享"
 format: 
   revealjs:
@@ -240,7 +240,6 @@ leaflet(width = "1000px", height = "600px") %>%
 ::: {.fragment}
 - 写作
 - 演讲
-- 为别人答疑
 - 发微博、朋友圈、抖音等社交媒体
 - ……
 :::
