@@ -2,7 +2,7 @@
 title: "与21级同学分享"
 author: "吴诗涛"
 institute: "经济191"
-date: "2022-08-30"
+date: "2022-08-31"
 description: "给21级同学的分享"
 format: 
   revealjs:
