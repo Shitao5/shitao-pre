@@ -7,7 +7,6 @@ description: "给21级同学的分享"
 format: 
   revealjs:
     menu: true
-    chalkboard: false
     preview-links: auto
     footer: "与21级同学分享"
     slide-number: c/t
@@ -15,7 +14,7 @@ format:
     self-contained: true # 会让render变慢，publish之前设置
 ---
 
-```{r load_packages, message=FALSE, warning=FALSE, include=FALSE} 
+```{r load_packages, message=FALSE, warning=FALSE, include=FALSE}
 library(fontawesome)
 ```
 
@@ -23,34 +22,36 @@ library(fontawesome)
 
 <br>
 
-::: {.yinyan}
+::: yinyan
 一个开场
 :::
 
-::: {.notes}
-- 军训即将结束，在军训中有所感悟
-- 开始憧憬仓前校区的大二生活
+::: notes
+-   军训即将结束，在军训中有所感悟
+-   开始憧憬仓前校区的大二生活
 :::
 
 ## 我为什么在这里
 
-- 退伍大学生
+-   退伍大学生
 
-- 大四老学长
+-   大四老学长
 
-- 三年的学习中总结了一些经验，可以供大家参考
+-   三年的学习中总结了一些经验，可以供大家参考
 
-- 感受年轻朝气😬
+-   感受年轻朝气😬
 
 ## 我给大家带来什么
 
-- 军旅生涯感悟
+-   军旅生涯感悟
 
-- 大学学习建议
+-   大学学习建议
 
-- 学习工具和资源途径
+-   学习工具和资源途径
 
-::: {.notes}
+-   夹带一些我正在学习的私货
+
+::: notes
 军训刚刚结束，相信大家通过教官的讲述、自身的体验，对军旅有了一定的体会。在这我也会分享我在军旅生涯的感悟，让大家对军旅有更深入的了解。
 
 承接大家上一段体会，我会讲一些大学学习的建议，提供一些工具，帮助开启同学们在仓前校区的生活。
@@ -60,103 +61,113 @@ library(fontawesome)
 
 <br>
 
-::: {.yinyan}
+::: yinyan
 关于我
 :::
 
 ## 兴趣爱好
 
-::: {.fragment}
-- `r fa("r-project", fill = "steelblue")` use[R](https://www.r-project.org/)（包括但不限于数据分析、网络爬虫、数据可视化、可重复报告）
+::: fragment
+-   `r fa("r-project", fill = "steelblue")` use[R](https://www.r-project.org/)（包括但不限于数据分析、网络爬虫、数据可视化、可重复报告）
 :::
 
-::: {.fragment}
-- `r fa("book-open", fill = "#1363DF")` 阅读 + `r fa("think-peaks", fill = "#1363DF")` 思考（擅长白嫖[书籍资源](https://zh.u1lib.org/)，目前在琢磨[赫尔曼·黑塞](https://zh.wikipedia.org/wiki/%E8%B5%AB%E5%B0%94%E6%9B%BC%C2%B7%E9%BB%91%E5%A1%9E)的作品）
+::: fragment
+-   `r fa("book-open", fill = "#1363DF")` 阅读 + `r fa("think-peaks", fill = "#1363DF")` 思考（擅长白嫖[书籍资源](https://zh.u1lib.org/)，目前在琢磨[赫尔曼·黑塞](https://zh.wikipedia.org/wiki/%E8%B5%AB%E5%B0%94%E6%9B%BC%C2%B7%E9%BB%91%E5%A1%9E)的作品）
 
-- `r fa("music", fill = "#F94C66")` 听音乐（HiFi退烧中）
+-   `r fa("music", fill = "#F94C66")` 听音乐（HiFi退烧中）
 
-- `r fa("person-running", fill = "#3EC70B")` 跑步（遇见打招呼👋）
+-   `r fa("person-running", fill = "#3EC70B")` 跑步（遇见打招呼👋）
 :::
 
-::: {.fragment}
-- `r fa("blog", fill = "#F15412")` 博客写作（正在尝试）
+::: fragment
+-   `r fa("blog", fill = "#F15412")` 博客写作（正在尝试）
 :::
 
 ## 奖学金及荣誉
 
-1. 第十届“经亨颐奖学金”
-1. 第十届“马云青春领袖奖”十佳大学生
-1. 浙江省政府奖学金$\times 2$
-1. 优秀学生一等奖学金$\times 4$
-1. 校三好学生$\times 2$
-1. 优秀共青团员
+1.  第十届"经亨颐奖学金"
+2.  第十届"马云青春领袖奖"十佳大学生
+3.  浙江省政府奖学金$\times 2$
+4.  优秀学生一等奖学金$\times 4$
+5.  校三好学生$\times 2$
+6.  优秀共青团员
 
-……
+......
 
-::: {.fragment}
+::: fragment
 <center>平均学分绩点（GPA）：4.2</center>
 :::
 
 ## 学科竞赛获奖 {.scrollable .smaller}
 
-::: {.notes}
+::: notes
 讲这玩意儿真的非常寡淡，一笔带过谢谢！
 :::
 
-1. 2020年11月 省大学生经济管理案例竞赛二等奖
-1. 2020年11月 省第三届大学生乡村振兴创意大赛铜奖
-1. 2020年12月 省会展策划创意大赛暨首届会展策划创意国际邀请赛一等奖
-1. 2021年05月 省第十七届“挑战杯”大学生课外学术科技作品竞赛一等奖
-1. 2021年05月 国际数学建模竞赛（美国赛）S奖
-1. 2021年06月 校第20届数学建模竞赛一等奖
-1. 2021年07月 长三角高校数学建模竞赛成功参赛奖
-1. 2021年12月 省大学生数学建模竞赛三等奖
-1. 2021年12月 省大学生经济管理案例竞赛二等奖
+1.  2020年11月 省大学生经济管理案例竞赛二等奖
+2.  2020年11月 省第三届大学生乡村振兴创意大赛铜奖
+3.  2020年12月 省会展策划创意大赛暨首届会展策划创意国际邀请赛一等奖
+4.  2021年05月 省第十七届"挑战杯"大学生课外学术科技作品竞赛一等奖
+5.  2021年05月 国际数学建模竞赛（美国赛）S奖
+6.  2021年06月 校第20届数学建模竞赛一等奖
+7.  2021年07月 长三角高校数学建模竞赛成功参赛奖
+8.  2021年12月 省大学生数学建模竞赛三等奖
+9.  2021年12月 省大学生经济管理案例竞赛二等奖
 
-……
+......
 
 # 军旅生涯感悟
 
 <br>
 
-::: {.yinyan}
-青春该有穿迷彩的样子
+::: yinyan
+回望，青春有穿迷彩的样子
 :::
 
-::: {.notes}
+::: notes
 天津，职务，获奖，参加任务
 :::
 
----
+## 军旅生涯感悟
 
-- 集体观念
+-   集体观念
 
-::: {.fragment}
-- 战友情
+::: fragment
+-   战友情
 :::
 
-::: {.fragment}
-- 敢于吃苦，敢于胜利
+::: fragment
+-   敢于吃苦，敢于胜利
 :::
 
-::: {.fragment}
-- 做难事必有所得
+::: fragment
+-   做难事必有所得
 :::
 
-::: {.notes}
-- 在大学，个体意识增强
-- 注重同学情谊的培养
-- 训练
-- 日常的平带，可以磨灭所有的意志，敢于迎接新的挑战
+::: notes
+-   在大学，个体意识增强
+-   注重同学情谊的培养
+-   训练
+-   日常的平淡，可以磨灭所有的意志，敢于迎接新的挑战
 :::
 
 # 给大二同学的建议
 
 <br>
 
-::: {.yinyan}
+::: yinyan
 来自一名大四学长
 :::
+
+## [学校3.0时代](https://page.om.qq.com/page/O7VIFC_P5KX4VXbj9dDv1V0A0)
+
+1.  保持对知识的渴望
+
+2.  利用互联网资源自学的能力
+
+3.  善于用技术去体验和创造
+
+4.  道德认同和同理心
 
 ## 阅读！阅读！阅读！
 
@@ -168,119 +179,202 @@ leaflet(width = "1000px", height = "600px") %>%
   setView(lng=120.010, lat=30.2952, zoom = 17)
 ```
 
-::: {.notes}
+::: notes
 为了避免我的一家之言，我询问了其他大四的同学，大家一致认为，应该把阅读列入，因此我把阅读放在了第一条。
 :::
 
 ## 阅读！阅读！阅读！
 
-- 专业方面的阅读
-  - 经济学专业的同学多看经典，比如曼昆或者萨缪尔森的《经济学原理》，诺奖得主的文章和著作。
-  - 金融工程的同学多看一些编程方面的书籍，提升对数据的处理和分析能力。 ^[本人非金工专业，仅供参考。]
+-   专业方面的阅读
+    -   经济学专业的同学多看经典，比如曼昆或者萨缪尔森的《经济学原理》，诺奖得主的文章和著作。
+    -   金融工程的同学多看一些编程方面的书籍，提升对数据的处理和分析能力。 [^1]
 
-::: {.aside}
+[^1]: 本人非金工专业，仅供参考。
+
+::: aside
 经济学是讲述社会运行逻辑的学科，此处并非完全划分开两个专业，经济学的同学若有编程技术，金工的同学若更熟悉经济原理，更佳。
 :::
 
 ## 阅读！阅读！阅读！
 
-- 专业外的阅读
-  - 发展兴趣：艺术、编程等
-  - 拓宽认识：心理学、社会学等领域
-  - 提升文学修养：诗歌、散文、小说等
-  - ……
+-   专业外的阅读
+    -   发展兴趣：艺术、编程等
+    -   拓宽认识：心理学、社会学等领域
+    -   提升文学修养：诗歌、散文、小说等
+    -   ......
+
+## 阅读！阅读！阅读！
+
+![我的图书馆借阅](img/jieyue.png)
+
+## 阅读！阅读！阅读！
+
+![我的阅读笔记词云](img/ciyun.jpg)
+
+::: xiao
+词云图制作过程[在此](https://mp.weixin.qq.com/s/d-Qdy7_icdxzLOzH9SSjtA)
+:::
 
 ## 提升学习能力
 
-- 学习如何学习
-  - 善用学校资源：[图书馆](http://opac.hznu.edu.cn:8080/opac/search_adv.php#/index)、[数据库](https://wisdom.chaoxing.com/newwisdom/doordatabase/database.html?pageId=178161&wfwfid=22888)（[知网](https://cnki.net/)）等
-  - 拓宽学习途径：慕课平台、[GitHub](https://github.com/)等
-  - 善用工具：笔记软件、文献管理软件等
+-   学习如何学习
+    -   善用学校资源：[图书馆](http://opac.hznu.edu.cn:8080/opac/search_adv.php#/index)、[数据库](https://wisdom.chaoxing.com/newwisdom/doordatabase/database.html?pageId=178161&wfwfid=22888)（[知网](https://cnki.net/)）等
+    -   拓宽学习途径：慕课平台、[GitHub](https://github.com/)等
+    -   善用工具：笔记软件、文献管理软件等
 
-<center><a href="https://www.coursera.org/learn/learning-how-to-learn"><img src=img/learn-how-to-learn.png style="zoom:40%;"></a></center>
+<center><a href="https://www.coursera.org/learn/learning-how-to-learn"><img src="img/learn-how-to-learn.png" style="zoom:40%;"/></a></center>
 
-  <!-- [Zotero](https://www.zotero.org/) -->
+<!-- [Zotero](https://www.zotero.org/) -->
 
 ## 提升学习能力
 
-- 学会如何提问
-  - 有好的问题，才可能有好的答案
-  - 帮助别人帮助你
-  - [《学会提问》](https://book.douban.com/subject/35513147/)
+-   学会如何提问
+    -   有好的问题，才可能有好的答案
+    -   帮助别人帮助你
+    -   [《学会提问》](https://book.douban.com/subject/35513147/)
 
-<center><img src=img/help-me-help-you.png style="zoom:110%;"></center>
+<center><img src="img/help-me-help-you.png" style="zoom:110%;"/></center>
 
 ::: {.fragment .qiangdiao}
 大胆提问！大胆提问！大胆提问！
 :::
 
-## 大学三大关键指标（KPI） ^[自己定义的，供参考]
+## 大学三大关键指标（KPI） [^2]
+
+[^2]: 自己定义的，供参考
 
 ### 1. 输入量
 
 通过自己的感悟将外界的信息内化为内在的知识。
 
-> 生命不是你活了多少日子，而是你记住了多少日子。 ——许渊冲
+> 生命不是你活了多少日子，而是你记住了多少日子。 ------许渊冲
 
-::: {.fragment}
-- 阅读
-- 向别人提问
-- 各类媒体
-- ……
+::: fragment
+-   阅读
+-   向别人提问
+-   各类媒体
+-   ......
 :::
 
-## 大学三大关键指标（KPI） ^[自己定义的，供参考]
+## 大学三大关键指标（KPI） [^3]
+
+[^3]: 自己定义的，供参考
 
 ### 2. 输出量
 
 将内在的知识转化为别人可以接收的信息。
 
-> 说话周到比雄辩好，措辞适当比恭维好。 ——培根
+> 说话周到比雄辩好，措辞适当比恭维好。 ------培根
 
-::: {.fragment}
-- 写作
-- 演讲
-- 发微博、朋友圈、抖音等社交媒体
-- ……
+::: fragment
+-   写作
+-   演讲
+-   发微博、朋友圈、抖音等社交媒体
+-   ......
 :::
 
-## 大学三大关键指标（KPI） ^[自己定义的，供参考]
+## 大学三大关键指标（KPI） [^4]
+
+[^4]: 自己定义的，供参考
 
 ### 3. 运动量
 
-> 殊不知有健全之身体，始有健全之精神；若身体柔弱，则思想精神何由发达？ ——蔡元培
+> 殊不知有健全之身体，始有健全之精神；若身体柔弱，则思想精神何由发达？ ------蔡元培
+
+<br>
+
+::: qiangdiao
+因人而异
+:::
 
 ## 发现兴趣，发展一门手艺
 
-<center><img src=img/mermaid-diagram.svg style="zoom:100%;"></center>
+<center><img src="img/mermaid-diagram.svg" style="zoom:100%;"/></center>
 
-::: {.qiangdiao}
+::: qiangdiao
 兴趣→拓宽、深入→小专家
 :::
 
+# 一些零碎建议
+
+<br>
+
+::: yinyan
+不成体系，欢迎探讨
+:::
+
+## 关于科研竞赛
+
+-   ~~至少~~以负责人的角色主持一次
+
+-   适度参与，科研竞赛对于个人成长的收益也遵守[边际效用递减](https://baike.baidu.com/item/%E8%BE%B9%E9%99%85%E6%95%88%E7%94%A8%E9%80%92%E5%87%8F/5229007)
+
+> 注意力是你唯一可以随意调用且能有所产出的资源。 ------《财富自由之路》 李笑来
+
+-   跨学科
+
+## 关于绩点
+
+-   ~~越高越好（纯属废话）~~
+
+-   不要挂科
+
+-   和奖学金、保研、出国密切相关
+
+## 关于证书
+
+-   证书≠能力
+
+![xiangyun的[简历](https://xiangyun.rbind.io/resume/)](img/xiangyun.png)
+
+## 关于编程 {.scrollable}
+
+-   **程序**是计算机可以识别和运行的语言，**编程**是把工作流程转化为程序，让计算机帮助我们工作。
+
+-   编程语言各有千秋
+
+```{r}
+library(rvest)
+tiobe <- read_html("https://www.tiobe.com/tiobe-index/")
+tables <- tiobe |>
+  html_elements("table") |>
+  html_table()
+data <- tables[[1]][, c(-3, -4)] 
+DT::datatable(data)
+# knitr::kable(data)
+```
+
+::: {.xiao}
+数据来源：[TIOBE](https://www.tiobe.com/tiobe-index/)
+:::
+
+## 关于编程
+
+> We strongly believe that it’s best to master one tool at a time. You will get better faster if you dive deep, rather than spreading yourself thinly over many topics. This doesn’t mean you should only know one thing, just that you’ll generally learn faster if you stick to one thing at a time. You should strive to learn new things throughout your career, but make sure your understanding is solid before you move on to the next interesting thing.
+>
+> ——[*R for Data Science*](https://r4ds.had.co.nz/introduction.html), [Hadley Wickham](https://hadley.nz/)
+
 ## 更多内容，详见：
 
-:::: {.columns}
-
+::: columns
 ::: {.column width="70%"}
-- `r fa("blog", fill = "#F15412")` 个人博客: <https://shitao.netlify.app/>
+-   `r fa("blog", fill = "#F15412")` 个人博客: <https://shitao.netlify.app/>
 
-- `r fa("github", fill = "#24292F")` GitHub:
-<https://github.com/Shitao5/>
+-   `r fa("github", fill = "#24292F")` GitHub: <https://github.com/Shitao5/>
 
-- `r fa("file-powerpoint", fill = "#C43F1D")` 本幻灯片：
-  1. <https://shitao5.github.io/shitao-pre/>
-  1. <https://shitao-pre.netlify.app/>
+-   `r fa("file-powerpoint", fill = "#C43F1D")` 本幻灯片：
 
-<center><img src=img/pre-netlify.png style="zoom:55%;"></center>
+    1.  <https://shitao5.github.io/shitao-pre/>
+    2.  <https://shitao-pre.netlify.app/>
 
+<center><img src="img/pre-netlify.png" style="zoom:55%;"/></center>
 :::
 
 ::: {.column width="30%"}
-- `r fa("weixin", fill = "#2BA245")` 微信：
+-   `r fa("weixin", fill = "#2BA245")` 微信：
 
 ![备注下姓名噢🤝](img/weixin.jpg)
 
+-   `r fa("envelope", fill = "#F53521")` 邮箱：<a>shitao4r.gmail.com</a>
 :::
-
-::::
+:::

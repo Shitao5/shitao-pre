@@ -8,10 +8,17 @@
 .reveal h2 { color: #820000;}
 .reveal blockquote {
   font-size: 75%;
-  font-family: "STKaiti";
+  font-family: "Noto Sans", "STKaiti";
   color: #1C3879;
   border-left-color: #002B5B;
 }
+.reveal .caption {
+  text-align: center;
+}
+.reveal .cell {
+  font-size: 50%;
+}
+
 
 // 一级标题下注释
 .reveal .yinyan { color: #42855B;}
@@ -22,4 +29,10 @@
   font-weight: bold;
   font-size: 1.2em;
   text-align: center;
+}
+
+// 小字
+.reveal .xiao {
+  font-size: 0.5em ;
+  text-align: right;
 }
